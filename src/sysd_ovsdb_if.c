@@ -1022,7 +1022,7 @@ sysd_dump(char* buf, int buflen)
         strncat(buf, tmp_buf, REM_BUF_LEN);
         strncat(buf, "\t\t\t", REM_BUF_LEN);
         strcpy(tmp_buf, "\0");
-        sprintf(tmp_buf, "%ld", daemons[i]->cur_hw);
+        sprintf(tmp_buf, "%"PRId64, daemons[i]->cur_hw);
         strncat(buf, tmp_buf, REM_BUF_LEN);
         strncat(buf, "\n", REM_BUF_LEN);
         i++;
